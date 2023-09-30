@@ -94,7 +94,7 @@ ul {
 }
 
 .header {
-  padding: 30px 0;
+  padding: 30px 0 25px;
 }
 
 .header__container {
@@ -201,6 +201,7 @@ ul {
   border-radius: 15px;
   background-repeat: no-repeat;
   overflow: hidden;
+  background-size: contain;
 }
 
 .offers__item_1 {
@@ -234,6 +235,7 @@ ul {
 
 .offers__item-title {
   margin: 0 0 15px;
+  max-width: 400px;
   color: var(--color-white);
   font-size: 40px;
   font-weight: 700;
@@ -480,7 +482,7 @@ ul {
 .hotels__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 20px 24px;
 }
 
 .hotels__item {
@@ -595,17 +597,17 @@ ul {
 }
 
 .booking {
-  margin-bottom: 70px;
+  margin-bottom: 76px;
 }
 
 .booking__container {
   border-radius: 15px;
-  padding: 45px 60px;
+  padding: 41px 44px;
   background-color: var(--color-mercury);
 }
 
 .booking__title {
-  margin: 0 0 20px;
+  margin: 0 0 18px;
   color: var(--color-black);
   font-size: 40px;
   font-weight: 400;
@@ -615,7 +617,7 @@ ul {
   display: flex;
   align-items: center;
   border-radius: 15px;
-  padding: 31px 28px;
+  padding: 27px 29px;
   background-color: var(--color-white);
 }
 
@@ -662,11 +664,12 @@ ul {
 }
 
 .contacts {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .contacts__title {
   margin: 0 0 20px;
+  padding-left: 40px;
   color: var(--color-mine-shaft);
   font-size: 40px;
   font-weight: 400;
@@ -773,6 +776,7 @@ ul {
 }
 
 .footer__left-text {
+  max-width: 320px;
   margin-bottom: 37px;
 }
 
