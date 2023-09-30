@@ -198,10 +198,11 @@ ul {
 }
 
 .offers__item {
+  min-height: 258px;
   border-radius: 15px;
   background-repeat: no-repeat;
   overflow: hidden;
-  background-size: contain;
+  background-size: cover;
 }
 
 .offers__item_1 {
@@ -486,6 +487,7 @@ ul {
 }
 
 .hotels__item {
+  min-height: 440px;
   max-width: 374px;
   flex-grow: 1;
   border-radius: 15px;
@@ -746,7 +748,7 @@ ul {
   }
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .footer {
