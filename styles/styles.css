@@ -764,7 +764,7 @@ ul {
   border-radius: 15px;
   background-image: url('../assets/img/hotels-last@1x.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 
