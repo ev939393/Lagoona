@@ -708,8 +708,7 @@ ul {
   font-weight: 400;
   line-height: 1;
   text-align: center;
-  transition-property: color, background-color;
-  transition-duration: .1s;
+  transition: color .2s, background-color .2s;
 }
 
 .hotels__item-btn:focus {
