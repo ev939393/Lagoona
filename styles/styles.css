@@ -231,6 +231,7 @@ ul {
 }
 
 .nav__navigation-item {
+  flex-shrink: 0;
   color: var(--color-dove-gray);
   font-size: 16px;
   font-weight: 400;
@@ -473,18 +474,16 @@ ul {
 }
 
 .services__item {
-  flex-grow: 1;
   width: calc((100% - var(--services-list-gap) * var(--services-list-offsets)) / var(--services-list-items));
   border-radius: 15px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: auto 165px;
   background-position: top center;
   background-color: var(--color-white);
 }
 
 .services__item-link {
   display: block;
-  width: 100%;
   padding-top: 165px;
 }
 
@@ -598,7 +597,6 @@ ul {
 
 .advantages__item {
   padding: 40px 42px 32px 45px;
-  flex-grow: 1;
   border-radius: 15px;
   width: calc((100% - var(--advantages-list-gap) * var(--advantages-list-offsets)) / var(--advantages-list-items));
   background-color: var(--color-white);
@@ -670,11 +668,18 @@ ul {
 }
 
 .hotels__item {
+  display: flex;
   min-height: 440px;
   width: calc((100% - var(--hotels-list-gap) * var(--hotels-list-offsets)) / var(--hotels-list-items));
 }
 
+.hotels__img {
+  height: 217px;
+}
+
 .hotels__item-content {
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   border-radius: 15px;
   background-color: var(--color-white);
@@ -683,6 +688,7 @@ ul {
 .hotels__item-info {
   display: flex;
   flex-direction: column;
+  height: 100%;
   padding: 32px 45px 45px;
 }
 
@@ -920,12 +926,12 @@ ul {
 }
 
 .contacts__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 45px;
   flex-shrink: 0;
   width: 375px;
-}
-
-.contacts__list {
-  margin-bottom: 45px;
 }
 
 .contacts__list-item {
@@ -1025,11 +1031,8 @@ ul {
 }
 
 .footer__wrap {
-  --footer-gap: 80px;
-  --footer-offsets: 2;
-  --footer-items: calc(var(--footer-offsets) + 1);
   display: flex;
-  gap: var(--footer-gap);
+  gap: 12%;
   padding: 45px;
   border-radius: 15px;
   background-color: var(--color-mine-shaft);
@@ -1039,13 +1042,10 @@ ul {
 }
 
 .footer__left {
-  /* flex-grow: 1; */
   display: flex;
   flex-direction: column;
   gap: 37px;
-  /* width: 375px; */
-  width: calc((100% - var(--footer-gap) * var(--footer-offsets)) / var(--footer-items));
-
+  max-width: 302px
 }
 
 .footer__text {
@@ -1061,10 +1061,9 @@ ul {
 
 .footer__center {
   display: flex;
-  /* flex-grow: 1; */
+  flex-grow: 1;
   flex-direction: column;
   gap: 15px;
-  width: calc((100% - var(--footer-gap) * var(--footer-offsets)) / var(--footer-items));
 }
 
 .footer__link-wrap {
@@ -1078,7 +1077,6 @@ ul {
   display: flex;
   justify-content: flex-end;
   width: 25px;
-
 }
 
 .footer__link {
@@ -1182,6 +1180,68 @@ ul {
   }
 }
 
+@media (max-width: 1200px) {
 
+  .navigation {
+      padding-bottom: 50px;
+  }
+
+  .navigation__container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .nav__navigation-list {
+    gap: 25px;
+  }
+
+  .navigation__btn-list {
+    gap: 25px
+  }
+
+  .offers {
+    padding-bottom: 50px;
+  }
+
+  .about {
+    padding-bottom: 50px;
+  }
+
+  .services {
+    padding-bottom: 50px;
+  }
+
+  .advantages {
+    padding-bottom: 50px;    
+  }
+
+  .advantages__item {
+    padding: 35px 37px 27px 40px;
+  }
+
+  .advantages__item-descr {
+    line-height: 25px;
+  }
+
+  hotels {
+    padding-bottom: 50px;
+  }
+  
+  .booking {
+    padding-bottom: 50px;
+  }
+
+  .hotels__item-info {
+    padding: 22px 35px 35px;
+  }
+
+  .hotels__item-link {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+}
+
+/* дальше выставить дев тулс на 992, и редактировать для 1024 :) */
 
 
