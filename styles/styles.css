@@ -690,11 +690,14 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: var(--hotels-list-gap);
+  justify-content: center;
 }
 
 .hotels__item {
   display: flex;
+  justify-content: space-between;
   min-height: 440px;
+  max-width: 374px;
   width: calc((100% - var(--hotels-list-gap) * var(--hotels-list-offsets)) / var(--hotels-list-items));
 }
 
